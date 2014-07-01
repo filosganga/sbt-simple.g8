@@ -1,0 +1,7 @@
+
+
+
+class MainSpec extends FlatSpec {
+	
+
+}
