@@ -1,5 +1,7 @@
 import sbt._
 import Keys._
+import com.typesafe.sbt.packager.archetypes._
+import com.typesafe.sbt.packager.universal._
 
 object build extends Build {
 
@@ -15,5 +17,5 @@ object build extends Build {
     "project",
     file("."),
     settings = gcsettings ++ Seq(gcTask)
-  )
+  ).enablePlugins(JavaAppPackaging, UniversalPlugin)
 }

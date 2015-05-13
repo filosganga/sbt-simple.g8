@@ -1,6 +1,4 @@
 
-
-
 class MainSpec extends FlatSpec {
 	
 
